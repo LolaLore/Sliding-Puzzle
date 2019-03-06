@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Sliding Puzzle</title>  
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Sliding  Puzzle</h1>
+        </header>
+
+        <section class="score-panel">
+        	<span class="moves"></span>
+            <div class="timer"></div>
+        </section>
+		
+        <ul class="deck" id="card-deck">
+            <li class="card" type="number" id="nr1"><img id="i1" src="resorces/nr1.png"></li>
+            <li class="card" type="number" id="nr2"><img id="i2" src="resorces/nr2.png"></li>
+            <li class="card" type="number" id="nr3"><img id="i3" src="resorces/nr3.png"></li>
+            <li class="card" type="number" id="nr4"><img id="i4" src="resorces/nr4.png"></li>
+            <li class="card" type="number" id="nr5"><img id="i5" src="resorces/nr5.png"></li>
+            <li class="card" type="number" id="nr6"><img id="i6" src="resorces/nr6.png"></li>
+            <li class="card" type="number" id="nr7"><img id="i7" src="resorces/nr7.png"></li>
+            <li class="card" type="number" id="nr8"><img id="i8" src="resorces/nr8.png"></li>
+            <li class="card" type="free" id="freecard"></li>
+        </ul>
+    </div>
+	
+	<div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>Congratulations</h2>
+                <a class="close" href=# ></a>
+                <div class="content-1">
+                    Congratulations you're a winner!
+                </div>
+                
+                <button id="play-again" onclick="playAgain()">
+                    Play again</a>
+                </button>
+            </div>
+    </div>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js'></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
